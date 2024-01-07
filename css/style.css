@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,600;1,200&family=Oswald:wght@300;400;500&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: #d1dedd;
+	position: relative;
+	/*font-family: 'Oswald', sans-serif;*/
+	font-family: 'Kanit', sans-serif;
+}
+.container{
+	width: 80%;
+	margin: auto;
+}
+.header{
+	width: 100%;
+	height: 100px;
+	background: orange;
+}
+.div{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header .div .logo .logo-image{
+	width: 80px;
+	height: 80px;
+	float: left;
+	border-radius: 100%;
+}
+
+.header .div nav ul{
+	list-style-type: none;
+}
+
+.header .div nav ul li{
+	display: inline-block;
+	float: left;
+	padding: 0 14px;
+	font-size: 20px;
+
+}
+
+.header .div nav ul li a{
+	color: white;
+	transition: 1s ease all;
+	text-decoration: none;
+}
+
+.header .div nav ul li a:hover{
+	color: darkblue;
+	text-decoration: underline;
+}
+
+/*welcome home*/
+.welcome-section {
+	margin: 40px 0;
+}
+
+.container main {
+	margin: 40px;
+}
+.welcome-title, section .ser-edu-title
+{
+	text-align: center;
+	font-size: 28px;
+	color: #767f7e;
+}
+.welcome{
+	display: flex;
+	justify-content: space-between;
+}
+
+.welcome div,.welcome article{
+	width: 50%;
+}
+.welcome div img{
+	width: 400px;
+	border: 10px solid white;
+	border-radius: 10px;
+}
+
+.welcome article p{
+	font-size: 16px;
+	text-align: justify;
+	line-height: 28px;
+}
+
+.welcome-section .container section{
+	margin: 40px;
+}
+section .ser-edu{
+	display: flex;
+	justify-content: space-between;
+}
+.ser-edu-title{
+	margin-bottom: 40px;
+}
+.ser-edu-box {
+	width: 350px;
+	/*height: 400px;*/
+	border: 1px solid white;
+	border-radius: 10px;
+	margin: 20px;
+	padding: 20px;
+}
+.ser-edu-box i
+{
+	display: block;
+	font-size: 26px;
+	color: orange;
+}
+
+.ser-edu-box h3, .ser-edu-box i{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.ser-edu-box p{
+	text-align: justify;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+/*About page*/
+.about-us {
+	padding: 50px;
+}
+
+.about-us .container .what-we-do {
+	margin-bottom: 50px;
+	border-bottom: 2px solid white;
+	padding-bottom: 40px;
+}
+
+.about-us .container .what-we-do h1{
+	font-size: 28px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.about-us .container .what-we-do p{
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.8em;
+}
+
+.container .mission{
+	width: 100%;
+	height: 600px;
+	background: url("../images/mission.webp") no-repeat center/cover;
+
+	position: relative;
+	/*opacity: 0.6;*/
+}
+
+.container .mission .mission-description{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+
+	padding: 40px;
+}
+.container .mission .mission-description h2{
+	text-align: center;
+	font-size: 28px;
+	color: white;
+	margin-bottom: 30px;
+}
+.container .mission .mission-description p
+{
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.8em;
+	color: #7600bc;
+}
+
+/*Contact*/
+.contact-box{
+	margin: 30px 0;
+}
+.contact{
+	display: flex;
+	justify-content: space-between;
+}
+.contact-title{
+	width: 400px;
+	border: 2px solid white;
+	border-radius: 10px;
+	padding: 30px;
+	align-self: center;
+}
+.contact-title h2{
+	font-size: 26px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.contact-title p{
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.contact .contact-form{
+	width: 500px;
+	border: 1px solid white;
+	padding: 20px;
+}
+
+.contact .contact-form label, .contact .contact-form input{
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+
+	font-size: 18px;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+}
+
+.contact .contact-form input{
+	padding: 14px 20px;
+}
+.contact .contact-form textarea {
+	width: 100%;
+	height: 100px;
+	font-size: 18px;
+	padding: 14px 20px;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+}
+
+[type="submit"]{
+	background-color: orange;
+	margin-top: 20px;
+
+	border: none;
+	border-radius: 10px;
+	color: white;
+	cursor: pointer;
+	transition: 2s ease all;
+}
+[type="submit"]:hover{
+	background-color: purple;
+}
+
+.address{
+	width: 400px;
+	border: 1px solid white;
+	margin: 50px auto;
+	padding: 50px;
+	border-radius: 10px;
+}
+
+.address h1{
+	margin-bottom: 30px;
+	font-size: 28px;
+	text-align: center;
+}
+.address p{
+	font-size: 18px;
+	line-height: 24px;
+	color: #7600bc;
+	/*font-weight: bold;*/
+}
+
+.address p a{
+	text-decoration: none;
+	color:#7600bc ;
+}
+
+.container .featured{
+	display: flex;
+	justify-content: space-between;
+
+	padding: 50px 0;
+	margin: 50px 0;
+	border-bottom: solid 1px white;
+}
+.container .featured img{
+	width: 400px;
+
+	border: 10px solid white;
+	border-radius: 10px;
+
+}
+.container .featured div{
+	padding: 30px 50px;
+}
+.container .featured div h2{
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+.container .featured div p{
+	font-size: 18px;
+}
+.container .article{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 50px 0;
+}
+.container .article div {
+	width: 300px;
+}
+.container .article div img{
+	width: 100%;
+	border: 10px solid white;
+	border-radius: 10px;
+}
+.container .article div h3{
+	text-align: center;
+	font-size: 22px;
+	margin: 10px 0;
+}
+
+.container .article p{
+	font-size: 18px;
+}
+.article-title{
+	text-align: center;
+	font-size: 28px;
+	color: #767f7e;
+}
+
+/*footer	*/
+footer{
+	background: #7600bc;
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+}
+
+footer .container .title{
+	float: left;
+	width: 40%;
+}
+footer .container .title h1{
+	color: white;
+	font-size: 26px;
+}
+footer .container .copyright{
+	float: left;
+	width: 40%;
+	font-size: 20px;
+	color: white;
+}
+footer .container .social-icon{
+	float: right;
+	width: 20%;
+}
+footer .container .social-icon ul{
+	list-style-type: none;
+	float: right;
+}
+
+footer .container .social-icon ul li {
+	display: inline-block;
+	padding: 0 14px;
+	float: left;
+}
+.fa-facebook, .fa-twitter, .fa-youtube {
+	color: white;
+	font-size: 22px;
+}
+
+.home{
+	width: 50px;
+	height: 50px;
+	background: darkblue;
+	border-radius: 50px;
+
+	position: fixed;
+	right: 100px;
+	bottom: 50px;
+}
+
+.home a{
+	text-align: center;
+	font-size: 22px;
+	color: white;
+
+	display: block;
+	height: 100%;
+	line-height: 50px;
+}
